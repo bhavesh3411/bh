@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#09050f">
+<title>A Little Something For You ♥</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Dancing+Script:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>#loader{animation:loaderOut .8s ease 1.2s forwards}@keyframes loaderOut{to{opacity:0;visibility:hidden;pointer-events:none}}</style></head>
+<body>
+<div id="loader"><b>♥</b><span>Preparing your little surprise...</span></div>
+<div id="particles"></div>
+<nav><div class="brand">for you <i>♥</i></div><button id="menu">☰</button><div id="links">
+<button data-page="home">Home</button><button data-page="reasons">19 Reasons</button><button data-page="photos">Photos</button><button data-page="letter">Letter</button><button data-page="cake">Cake</button><button data-page="final">♥</button></div></nav>
+<button id="music">♫</button>
+<main>
+<section class="page hero active" id="home"><div class="content center"><small>OCTOBER 08 • 2026</small><h1>Hey... <em>you.</em></h1><h3>Yes, you. Don't scroll yet.</h3><p>I made a little something for someone who deserves more than just a “Happy Birthday” message.</p><button class="btn" data-next="gate">Enter the little surprise →</button></div><div class="scroll">scroll slowly ↓</div></section>
+
+<section class="page" id="gate"><div class="card center"><div class="heart">♥</div><small>A LITTLE CHECK</small><h2>Before we continue...</h2><p>This little world is reserved for someone special.</p><input id="name" placeholder="Type your name"><button class="btn" id="nameBtn">That's me ✨</button><span class="hint" id="hint"></span></div></section>
+
+<section class="page" id="countdown"><div class="content center"><small>THE DAY</small><h2>Something very special is happening...</h2><div class="date">08 · 10 · 2026</div><div class="count"><div><b id="d">00</b><span>Days</span></div><div><b id="h">00</b><span>Hours</span></div><div><b id="m">00</b><span>Minutes</span></div><div><b id="s">00</b><span>Seconds</span></div></div><p>The day someone incredibly special turns <strong>19</strong>.</p><button class="btn" data-next="balloons">Continue →</button></div></section>
+
+<section class="page" id="balloons"><div class="content"><small>A LITTLE GAME</small><h2>Pop a few balloons 🎈</h2><p class="muted">Every balloon has something I wanted you to know.</p><div id="balloonsBox"></div><button class="btn" data-next="photos">There is more →</button></div></section>
+
+<section class="page" id="photos"><div class="content"><small>MEMORIES</small><h2>Some moments deserve to stay.</h2><p class="muted">A tiny collection of moments that deserve their own little space.</p><div class="photos" id="herPhotos"></div><button class="btn" data-next="together">And then... there are these →</button></div></section>
+
+<section class="page" id="together"><div class="content"><small>US</small><h2>And then... there are these.</h2><p class="muted">Some pictures just feel a little more special.</p><div class="together" id="ourPhotos"></div><button class="btn" data-next="reasons">One more thing →</button></div></section>
+
+<section class="page" id="reasons"><div class="content"><small>BECAUSE YOU'RE 19</small><h2>19 things about you ✨</h2><p class="muted">Click every card.</p><div class="reasons" id="reasonsGrid"></div><button class="btn" data-next="letter">Now the serious part →</button></div></section>
+
+<section class="page" id="letter"><div class="letter-layout"><div class="envelope-wrap" id="envelope"><div class="envelope"><div class="flap"></div><div class="env-heart">♥</div></div><p>Open this when you're ready...</p></div><article id="paper"><small>A FEW WORDS</small><h2>Dear <em class="her">you</em>,</h2><div id="letterText"></div><div class="sign">— <span class="me">someone who thinks you're pretty special</span> ♥</div></article></div><button class="btn hidden" id="letterNext" data-next="secret">There's something I haven't said... →</button></section>
+
+<section class="page" id="secret"><div class="content center"><small>ONE LAST THING</small><h2 id="secretTitle">Okay...</h2><div id="secretBox"><p>There is one thing I've been meaning to say.</p><button class="btn" id="reveal">I'm ready →</button></div></div></section>
+
+<section class="page" id="cake"><div class="content center"><small>MAKE A WISH</small><h2>19 candles. One wish. 🎂</h2><div class="cake"><div id="candles"></div><div class="cake-top"></div><div class="cake-body">19</div><div class="plate"></div></div><p id="cakeHint">Tap the candles to blow them out ✨</p><button class="btn hidden" id="cakeNext" data-next="gift">Make the final wish →</button></div></section>
+
+<section class="page" id="gift"><div class="content center"><small>ONE LAST SURPRISE</small><h2>There's a little gift waiting...</h2><div class="gift" id="giftBox"><div class="lid"></div><div class="box"></div><div class="rv"></div><div class="rh"></div></div><p>Click the box 🎁</p></div></section>
+
+<section class="page final" id="final"><div class="glow"></div><div class="content center"><small>OCTOBER 8 • 2026</small><div class="best"><img id="best" src="assets/photos/best-photo.jpg" onerror="this.src='assets/photos/placeholder.svg'"></div><h2>Happy 19th Birthday,<br><em class="her">beautiful human</em>. ❤️</h2><p>I hope 19 brings you more smiles, more adventures, more beautiful memories, and more reasons to be happy.</p><h3>And maybe... a few more memories with me.</h3><div class="signature">Made with a little too much effort,<br>a lot of memories,<br>and probably more feelings than I should admit.</div><p>— <span class="me">someone who thinks you're pretty damn special</span> ♥</p><button class="restart" id="restart">Replay from the beginning ↻</button></div></section>
+</main>
+<div class="modal" id="modal"><button id="close">×</button><img id="modalImg"><p id="modalText"></p></div>
+<audio id="audio" loop><source src="assets\photos\Darkhaast Shivaay 320 Kbps.mp3" type="audio/mpeg"></audio>
+<script src="script.js"></script>
+</body>
+</html>
