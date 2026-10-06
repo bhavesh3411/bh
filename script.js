@@ -46,12 +46,12 @@ reasons:[
 "And honestly, I could keep going."
 ],
 herPhotos:[
-["assets/photos/5.jpg","That smile."],["assets/photos/6.jpg","You being you."],["assets/photos/7.jpg","This one is dangerously cute."],["assets/photos/8.jpg","One of my favourites."],["assets/photos/9.jpg","Just... wow."],["assets/photos/10.jpg","A little moment worth keeping."]
+["5.jpg","That smile."],["6.jpg","You being you."],["7.jpg","This one is dangerously cute."],["8.jpg","One of my favourites."],["9.jpg","Just... wow."],["10.jpg","A little moment worth keeping."]
 ],
 ourPhotos:[
-["assets/photos/1.jpg","A memory I'll always smile about."],["assets/photos/2.jpg","Some moments feel a little different."],["assets/photos/3.jpg","This one means more than you know."],["assets/photos/4.jpg","One for the memory box."]
+["1.jpg","A memory I'll always smile about."],["2.jpg","Some moments feel a little different."],["3.jpg","This one means more than you know."],["4.jpg","One for the memory box."]
 ],
-finalPhoto:"assets/photos/11.jpg"
+finalPhoto:"11.jpg"
 };
 // =====================================================
 
